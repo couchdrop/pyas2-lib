@@ -844,7 +844,7 @@ class Mdn:
             "AS2-From": quote_as2name(message.headers.get("as2-to")),
             "AS2-To": quote_as2name(message.headers.get("as2-from")),
             "Date": email_utils.formatdate(localtime=True),
-            "user-agent": "pyAS2 Open Source AS2 Software",
+            "user-agent": "Couchdrop AS2 Processor",
         }
 
         # Set the confirmation text message here
@@ -869,10 +869,10 @@ class Mdn:
         encoders.encode_7or8bit(mdn_text)
         self.payload.attach(mdn_text)
 
-        # Create and attache the MDN Report Message
+        # Create and attach the MDN Report Message
         mdn_base = email_message.Message()
         mdn_base.set_type("message/disposition-notification")
-        mdn_report = "Reporting-UA: pyAS2 Open Source AS2 Software\r\n"
+        mdn_report = "Reporting-UA: Couchdrop AS2 Processor\r\n"
         mdn_report += f'Original-Recipient: rfc822; {message.headers.get("as2-to")}\r\n'
         mdn_report += f'Final-Recipient: rfc822; {message.headers.get("as2-to")}\r\n'
         mdn_report += f"Original-Message-ID: <{message.message_id}>\r\n"

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 install_requires = [
     "asn1crypto==1.5.1",
     "oscrypto==1.3.0",
-    "pyOpenSSL==23.2.0",
+    "pyOpenSSL==24.3.0",
 ]
 
 tests_require = [
@@ -23,16 +23,16 @@ setup(
     name="pyas2lib",
     description="Python library for building and parsing AS2 Messages",
     license="GNU GPL v2.0",
-    url="https://github.com/abhishek-ram/pyas2-lib",
+    url="https://github.com/couchdrop/pyas2-lib",
     long_description="Docs for this project are maintained at "
-    "https://github.com/abhishek-ram/pyas2-lib/blob/"
+    "https://github.com/couchdrop/pyas2-lib/blob/"
     "master/README.md",
-    version="1.4.3",
-    author="Abhishek Ram",
-    author_email="abhishek8816@gmail.com",
+    version="1.4.4",
+    author="Couchdrop",
+    author_email="info@couchdrop.io",
     packages=find_packages(where=".", exclude=("test*",)),
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",

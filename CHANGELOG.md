@@ -1,5 +1,10 @@
 # Release History
 
+## 1.4.4 - 03-19-2025
+
+* updated `pyOpenSSL` to support cryptography > 41
+* changed CHANGELOG.md dates to be sensible (dd-mm-yyyy)
+
 ## 1.4.3 - 2023-01-25
 
 * fix: update pyopenssl version to resovle pyca/cryptography#7959
