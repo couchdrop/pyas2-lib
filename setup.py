@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     "asn1crypto==1.5.1",
-    "oscrypto==1.3.0",
+    "oscrypto @ git+https://github.com/couchdrop/oscrypto@1.3.1",
     "pyOpenSSL==24.3.0",
 ]
 
@@ -27,7 +27,7 @@ setup(
     long_description="Docs for this project are maintained at "
     "https://github.com/couchdrop/pyas2-lib/blob/"
     "master/README.md",
-    version="1.4.4",
+    version="1.4.5",
     author="Couchdrop",
     author_email="info@couchdrop.io",
     packages=find_packages(where=".", exclude=("test*",)),

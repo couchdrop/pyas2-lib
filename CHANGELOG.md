@@ -1,6 +1,10 @@
 # Release History
 
-## 1.4.4 - 03-19-2025
+## 1.4.5 - 20-03-2025
+
+* updated dependency on oscrypto to couchdrop@1.3.1
+
+## 1.4.4 - 19-03-2025
 
 * updated `pyOpenSSL` to support cryptography > 41
 * changed CHANGELOG.md dates to be sensible (dd-mm-yyyy)
