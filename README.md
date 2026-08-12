@@ -89,7 +89,7 @@ status, exception, mdn = msg.parse(
 ```
 * The parse function returns a 3 element tuple; the status of parsing, exception if any raised during parsing and an `pyas2lib.as2.Mdn` object for the message.
 * If the `mdn.mdn_mode` is `SYNC` then the `mdn.content` and `mdn.header` must be returned in the response.
-* If the `mdn.mdn_mode` is `ASYNC` then the mdn must be saved for later processing.  
+* If the `mdn.mdn_mode` is `ASYNC` then the mdn must be saved for later processing.
 
 ## Contribute
 
@@ -99,6 +99,21 @@ status, exception, mdn = msg.parse(
 1. Commit your changes: `git commit -am 'Add some feature'`
 1. Push to the branch: `git push origin my-new-feature`
 1. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to [AUTHORS][3].
+
+### Running locally
+
+#### Installing deps
+
+1. Create a virtualenv with `python -m venv .venv`
+1. Activate with `source .venv/bin/activate`
+1. Install dependencies with `python -m pip install -e .`
+
+#### Running tests
+
+1. Follow the above steps
+1. Install test deps with `python -m pip install -e ".[tests]"`
+1. Run `pytest` in the root directory
+
 
 [1]: https://www.ietf.org/rfc/rfc4130.txt
 [2]: https://github.com/abhishek-ram/pyas2-lib

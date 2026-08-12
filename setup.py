@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 install_requires = [
     "asn1crypto==1.5.1",
     "oscrypto @ git+https://github.com/couchdrop/oscrypto@1.3.1",
-    "pyOpenSSL==24.3.0",
+    "pyOpenSSL==26.4.0",
 ]
 
 tests_require = [
@@ -11,12 +11,13 @@ tests_require = [
     "toml==0.10.2",
     "pytest-cov==2.8.1",
     "coverage==5.0.4",
-    "pylint==2.12.1",
-    "pylama==8.3.7",
+    "pylint==3.0.4",
+    "pylama==8.4.1",
     "pylama-pylint==3.1.1",
     "black==24.3.0",
     "pytest-black==0.3.12",
-    "pyflakes==2.4.0",
+    "pyflakes==2.5.0",
+    "setuptools==81.0.0"
 ]
 
 setup(
@@ -27,7 +28,7 @@ setup(
     long_description="Docs for this project are maintained at "
     "https://github.com/couchdrop/pyas2-lib/blob/"
     "master/README.md",
-    version="1.4.5",
+    version="1.4.6",
     author="Couchdrop",
     author_email="info@couchdrop.io",
     packages=find_packages(where=".", exclude=("test*",)),
@@ -37,13 +38,11 @@ setup(
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Security :: Cryptography",
         "Topic :: Communications",
     ],
+    python_requires=">=3.12.0,<3.13.0",
     setup_requires=["pytest-runner"],
     install_requires=install_requires,
     tests_require=tests_require,

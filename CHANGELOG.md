@@ -1,17 +1,24 @@
 # Release History
 
+## 1.4.6 - 12-08-2026
+
+* fix: update `pyOpenSSL` to `pyOpenSSL==26.4.0` to support implicit dep `cryptography==50.0.0`  
+* fix: limit the required version of Python to `>=3.12.0,<3.13.0`
+* fix: update test deps to `pylint==3.0.4`, `pylama==8.4.1`, `pyflakes==2.5.0` and `setuptools==81.0.0` to fix test run issues
+* fix: Add documentation on building and running tests
+
 ## 1.4.5 - 20-03-2025
 
-* updated dependency on oscrypto to couchdrop@1.3.1
+* fix: update dependency on oscrypto to couchdrop@1.3.1
 
 ## 1.4.4 - 19-03-2025
 
-* updated `pyOpenSSL` to support cryptography > 41
-* changed CHANGELOG.md dates to be sensible (dd-mm-yyyy)
+* fix: update `pyOpenSSL` to support cryptography > 41
+* fix: change CHANGELOG.md dates to be sensible (dd-mm-yyyy)
 
 ## 1.4.3 - 2023-01-25
 
-* fix: update pyopenssl version to resovle pyca/cryptography#7959
+* fix: update pyopenssl version to resolve pyca/cryptography#7959
 
 ## 1.4.2 - 2022-12-11
 
