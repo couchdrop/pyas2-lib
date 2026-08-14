@@ -14,7 +14,7 @@ tests_require = [
     "pylint==3.0.4",
     "pylama==8.4.1",
     "pylama-pylint==3.1.1",
-    "black==24.3.0",
+    "black==26.3.1",
     "pytest-black==0.3.12",
     "pyflakes==2.5.0",
     "setuptools==81.0.0"
